@@ -3,7 +3,7 @@ class QuotationsController < ApplicationController
 
   # GET /quotations or /quotations.json
   def index
-    @quotations = Quotation.all
+    @quotations = Quotation.last(10)
   end
 
   # GET /quotations/1 or /quotations/1.json
