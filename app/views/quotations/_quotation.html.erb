@@ -3,26 +3,26 @@
   <div class="flex space-x-1 items-end">
     <!-- Real -->
     <div class="flex flex-col items-center">
-      <div class="text-sm text-gray-500"><%= quotation.real.format %></div>
-      <div style="height:<%= quotation.real.to_f * 50 %>px;" class="w-4 bg-green-500 hover:bg-green-400"></div>
+      <div class="text-xs text-gray-500"><%= quotation.real.format %></div>
+      <div style="height:<%= quotation.real.to_f * 50 %>px;" class="w-8 bg-green-500 hover:bg-green-400"></div>
     </div>
 
     <!-- Us Dollar -->
     <div class="flex flex-col items-center">
-      <div class="text-sm text-gray-500"><%= quotation.us_dollar.format %></div>
-      <div style="height:<%= quotation.us_dollar.to_f * 50 %>px;" class="w-4 bg-pink-500 hover:bg-pink-400"></div>
+      <div class="text-xs text-gray-500"><%= quotation.us_dollar.format %></div>
+      <div style="height:<%= quotation.us_dollar.to_f * 50 %>px;" class="w-8 bg-pink-500 hover:bg-pink-400"></div>
     </div>
 
     <!-- Australian Dollar -->
     <div class="flex flex-col items-center">
-      <div class="text-sm text-gray-500"><%= quotation.aus_dollar.format %></div>
-      <div style="height:<%= quotation.aus_dollar.to_f * 50 %>px;" class="w-4 bg-blue-500 hover:bg-blue-400"></div>
+      <div class="text-xs text-gray-500"><%= quotation.aus_dollar.format %></div>
+      <div style="height:<%= quotation.aus_dollar.to_f * 50 %>px;" class="w-8 bg-blue-500 hover:bg-blue-400"></div>
     </div>
 
     <!-- Euro -->
     <div class="flex flex-col items-center">
-      <div class="text-sm text-gray-500"><%= quotation.euro.format %></div>
-      <div style="height:<%= quotation.euro.to_f * 50 %>px;" class="w-4 bg-purple-500 hover:bg-purple-400"></div>
+      <div class="text-xs text-gray-500"><%= quotation.euro.format %></div>
+      <div style="height:<%= quotation.euro.to_f * 50 %>px;" class="w-8 bg-purple-500 hover:bg-purple-400"></div>
     </div>
   </div>
   <div class="text-center text-gray-500"><%= quotation.created_at.strftime('%Y-%m-%d %H:%M') %></div>
