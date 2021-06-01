@@ -2,33 +2,12 @@
 
 
 <div class="flex justify-center items-center w-full h-screen bg-indigo-50">
-  <div class="flex flex-col bg-white w-full md:w-1/2">
+  <div class="flex flex-col bg-white w-full">
     <div class="text-center text-2xl">Currency Exchange in Realtime</div>
 
     <!-- graph container -->
-    <div class="flex justify-start items-end">
-
-      <!-- dataset -->
-      <div class="flex flex-col items-center">
-        <div class="flex space-x-1">
-          <!-- Real -->
-          <div class="w-4 h-10 bg-green-500">
-          </div>
-
-          <!-- Us Dollar -->
-          <div class="w-4 h-10 bg-red-500">
-          </div>
-
-          <!-- Australian Dollar -->
-          <div class="w-4 h-10 bg-blue-500">
-          </div>
-
-          <!-- Euro -->
-          <div class="w-4 h-10 bg-purple-500">
-          </div>
-        </div>
-        <div class="text-center">10:30</div>
-      </div>
+    <div class="flex justify-start items-end space-x-2">
+      <%= render @quotations %>
     </div>
   </div>
 </div>

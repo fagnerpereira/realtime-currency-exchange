@@ -1,0 +1,25 @@
+<!-- dataset -->
+<div class="flex flex-col items-center">
+  <div class="flex space-x-1">
+    <!-- Real -->
+    <div class="w-4 bg-green-500">
+      <div style="height:<%= quotation.real.to_f * 2 %>px;"></div>
+    </div>
+
+    <!-- Us Dollar -->
+    <div class="w-4 bg-red-500">
+      <div style="height:<%= quotation.us_dollar.to_f * 2 %>px;"></div>
+    </div>
+
+    <!-- Australian Dollar -->
+    <div class="w-4 bg-blue-500">
+      <div style="height:<%= quotation.aus_dollar.to_f * 2 %>px;"></div>
+    </div>
+
+    <!-- Euro -->
+    <div class="w-4 bg-purple-500">
+      <div style="height:<%= quotation.euro.to_f * 2 %>px;"></div>
+    </div>
+  </div>
+  <div class="text-center">10:30</div>
+</div>
