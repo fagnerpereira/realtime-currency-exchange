@@ -21,5 +21,5 @@
       <div style="height:<%= quotation.euro.to_f * 10 %>px;"></div>
     </div>
   </div>
-  <div class="text-center">10:30</div>
+  <div class="text-center"><%= quotation.created_at.strftime('%Y-%m-%d %H:%M') %></div>
 </div>
