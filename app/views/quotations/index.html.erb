@@ -2,7 +2,7 @@
 
 
 <div class="flex justify-center items-center w-full h-screen bg-indigo-50">
-  <div class="flex flex-col bg-white w-full border p-4">
+  <div class="flex flex-col w-full p-4">
     <div class="flex space-x-2 justify-center items-center">
       <div class="font-bold text-2xl">Currency Exchange in Realtime</div>
       <div class="">Updates every 1 hour</div>
@@ -11,7 +11,7 @@
 
     <%= turbo_stream_from :quotations %>
     <!-- graph container -->
-    <div class="flex justify-start items-end space-x-1 w-full overflow-x-auto px-10 mt-10" id="quotations">
+    <div class="flex justify-start items-end w-full overflow-x-auto px-10 mt-10 bg-white rounded" id="quotations">
       <%= render @quotations %>
     </div>
   </div>
