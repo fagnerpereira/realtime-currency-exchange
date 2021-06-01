@@ -14,13 +14,13 @@ ActiveRecord::Schema.define(version: 2021_06_01_151416) do
 
   create_table "quotations", force: :cascade do |t|
     t.integer "real_cents", default: 0, null: false
-    t.string "real_currency", default: "USD", null: false
+    t.string "real_currency", default: "BRL", null: false
     t.integer "us_dollar_cents", default: 0, null: false
     t.string "us_dollar_currency", default: "USD", null: false
     t.integer "aus_dollar_cents", default: 0, null: false
-    t.string "aus_dollar_currency", default: "USD", null: false
+    t.string "aus_dollar_currency", default: "AUD", null: false
     t.integer "euro_cents", default: 0, null: false
-    t.string "euro_currency", default: "USD", null: false
+    t.string "euro_currency", default: "EUR", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
