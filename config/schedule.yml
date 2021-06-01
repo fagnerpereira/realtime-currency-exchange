@@ -1,4 +1,4 @@
 fetch_latest_quotation_worker:
-  cron: "* * * * *"
+  cron: "0 * * * *"
   class: "FetchLatestQuotationWorker"
   queue: default
