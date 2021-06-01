@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.fixer.io/api/latest?access_key=6402715219b19a99fb22bbb27f0b7381&symbols=BRL,USD,%20AUD,%20EUR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - data.fixer.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jun 2021 16:35:41 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      X-Apilayer-Transaction-Id:
+      - c69c7676-bb49-4734-8c7e-4fb4fe384257
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Last-Modified:
+      - Tue, 01 Jun 2021 16:29:03 GMT
+      Etag:
+      - 16542063259d9032939e9992b32bef32
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.010'
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"timestamp":1622564943,"base":"EUR","date":"2021-06-01","rates":{"BRL":6.317088,"USD":1.223578,"AUD":1.577071,"EUR":1}}'
+  recorded_at: Tue, 01 Jun 2021 16:35:41 GMT
+recorded_with: VCR 6.0.0

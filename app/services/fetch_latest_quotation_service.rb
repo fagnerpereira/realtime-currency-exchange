@@ -1,5 +1,5 @@
 class FetchLatestQuotationService
-  def call
+  def call!
     response = Fixer.new.latest_quotation
 
     if response['success']
